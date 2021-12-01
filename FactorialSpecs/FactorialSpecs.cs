@@ -44,5 +44,15 @@ namespace FactorialSpecs
             var resultFactorial = Factorial.Calculate(number);
             Assert.Equal(expectedFactorial, resultFactorial);
         }
+
+        [Fact]
+        public void When_number_is_10_then_factorial_is_3628800()
+        {
+            var expectedFactorial = 3628800;
+            var number = 10;
+
+            var resultFactorial = Factorial.Calculate(number);
+            Assert.Equal(expectedFactorial, resultFactorial);
+        }
     }
 }

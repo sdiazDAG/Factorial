@@ -4,7 +4,7 @@ namespace FactorialSpecs
 {
     public class Factorial
     {
-        public static int Calculate(int number)
+        public static long Calculate(int number)
         {
             var result = 1;
             if (number >= 2)
