@@ -14,13 +14,15 @@ namespace FactorialSpecs
             var resultFactorial = Factorial.Calculate(number);
             Assert.Equal(expectedFactorial, resultFactorial);
         }
-    }
 
-    public class Factorial
-    {
-        public static int Calculate(int number)
+        [Fact]
+        public void When_number_is_1_then_factorial_is_1()
         {
-            return 1;
+            var expectedFactorial = 1;
+            var number = 1;
+
+            var resultFactorial = Factorial.Calculate(number);
+            Assert.Equal(expectedFactorial, resultFactorial);
         }
     }
 }
