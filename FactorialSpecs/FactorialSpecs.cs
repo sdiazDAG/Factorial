@@ -24,5 +24,15 @@ namespace FactorialSpecs
             var resultFactorial = Factorial.Calculate(number);
             Assert.Equal(expectedFactorial, resultFactorial);
         }
+
+        [Fact]
+        public void When_number_is_2_then_factorial_is_1()
+        {
+            var expectedFactorial = 2;
+            var number = 2;
+
+            var resultFactorial = Factorial.Calculate(number);
+            Assert.Equal(expectedFactorial, resultFactorial);
+        }
     }
 }
